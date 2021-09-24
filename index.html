@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+ 
+      img{
+        width: 90px;
+      }
+
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
+      h2,h3,h4,h5{
+        margin: 0;
+      }
+      h2{
+        margin-bottom: 20px;
+      }
+      li{
+        margin-bottom: 24px;
+      }
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
+     body{
+       margin: 0;
+     }
+     #skills{
+       display: none;
+     }
+    </style>
+    <style>
+      .bio{
+       position: relative;
+      }
+      .bio>div{
+      position: absolute;
+      top: 0;
+      right:0;
+      }
+      p{
+      margin: .3em 0;
+      }
+      h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+    
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+    a {
+      color: blue;
+      text-decoration: none;     /*让a标签的下线没有 */
+    }
+    a:hover{
+      border-bottom: 1px solid;
+    }
+    p,
+    li {
+      color: #666;
+    }
+    </style>
+    <style>
+      .projects>ol>li > header{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+    </style>
+    <style>
+      .openSource>ul>li >header{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+    </style>
+    <style>
+      .skills .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .skills>.wrapper>ul>{
+      margin-top: 50px;
+    }
+    #skills{
+      width: 500px;height: 270px;px;
+    }
+    </style>
+    <style>
+      @media (max-width:500px) {
+        body{
+          margin: 0;
+        }
+        article{
+          width: auto;
+          height: auto;
+        }
+        img{
+          display: none;
+        }
+        .skills .wrapper{
+        flex-direction: column;
+      }
+      }
+  
+    </style>
+  </head>
+  <body>
+    <article>
+      <section class="bio">
+        <h1>李子杰</h1>
+        <div id="image2"></div>
+        <p>男 | 22岁  | 杭州</p>
+        <p>手机:<a href="tel:17367118754">17367118754</a> | 微信:nmlg512 | 邮箱:<a href="mailto:2248868140@qq.com">2248868140@qq.com</a></p>
+      </section>
+      </section>
+      <hr>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header> 
+              <h3>Li UI</h3>
+              <span>
+                <a href="https://github.com/LiYuyu123/li-ui" target="blank">源码链接</a>
+                <a href="https://liyuyu123.github.io/li-ui-website/index.html#/"  target="blank">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一款基于 <strong>Vue3</strong>/ <strong>vite</strong>/ <strong>TypeScript</strong> /
+              的 UI 框架。
+            </p>
+            <p>
+              主要组件有Switch、Tabs、Dialog、Button等。
+            </p>
+          <p>
+            使用了setup , onMounted , watchEffect , ref, computed等Compositioin API
+          </p>
+            <p>
+              制作过程让我对 TypeScript 和单元测试有了新的认识。
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>记账React版</h3>
+              <span>
+                <a href="https://github.com/LiYuyu123/react-morney" target="blank">源码私有</a>
+                <a href="https://liyuyu123.github.io/react-morney-website/#/statistics" target="blank">项目预览</a>
+              </span>
+            </header>
+            <p>
+              这是一个基于<strong>React </strong> / <strong>React Router </strong>/ <strong>自定义 Hooks</strong>/<strong>TypeScript</strong> /webpack / LocalStorage 实现的极简主义记账应用。
+            </p>
+            <p>
+              这是我从自己的需求出发，独立实现的极简记账应用，特点是快速记账。
+            </p>
+            <p>
+              该项目使我对 webpack 和 Hooks API、SVG Icon 有了深入的理解
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>记账Vue版</h3>
+              <span>
+                <a href="https://github.com/LiYuyu123/morney" target="blank">源码私有</a>
+                <a href="https://liyuyu123.github.io/morney-website/#/labels" target="blank">项目预览</a>
+              </span>
+            </header>
+            <p>
+              一个基于 <strong>Vue2</strong> /
+              <strong>Vue Router</strong>/<strong>Vuex</strong> /<strong>TypeScript</strong>/Echarts的移动端单页面应用。
+            </p>
+
+            <p>
+              这是我从自己的需求出发，独立实现的极简记账应用，特点是快速记账，
+              而且可以通过图表查看自己的消费习惯。
+            </p>
+            <p>
+              该项目大量使用 源代码几乎完全用TypeScript实现，用到了装饰器语法
+            </p>
+          </li>
+          <li>
+            <header>
+              <h3>命令行翻译小工具</h3>
+              <span>
+                <a href="https://github.com/LiYuyu123/Self-made-translation-gadget" target="blank">源码私有</a>
+              </span>
+            </header>
+            <p>
+              一个基于<strong>node.js</strong>/<strong>commander</strong>一个翻译小工具
+            </p>
+          </li>
+        </ol>
+      </section>
+      <hr>
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+        <div id="skills"></div>
+          <ul>
+            <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+            <li>
+              熟悉<strong>前后端分离</strong>技术，包括
+              AJAX、跨域、前端路由、Cookie、Session 等
+            </li>
+            <li>
+              熟练掌握 <strong>Vue全家桶</strong>的使用，包括
+              VueCli、VueRouter、Vuex 等
+            </li>
+            <li>
+              熟练掌握 <strong>React全家桶</strong>的使用，包括
+              create-react-app、ReactRouter、Redux 等
+            </li>
+            <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+            <li><strong>node.js</strong>的文件模块/http模块/stream流</li>
+            <li><strong>Docker</strong>/<strong>mySQL数据系统管理</strong></li>
+            <li>
+              了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的
+            </li>
+            <li>了解 <strong>Webpack 的配置和优化</strong></li>
+          </ul>
+        </div>
+      </section>
+      <hr >  
+      <section class="openSource">
+        <h2>开源项目</h2>  
+        <ul>
+          <li>
+            <header>
+              <h3>会动的皮卡丘</h3>
+              <span>
+                <a href="https://github.com/LiYuyu123/pikachu" target="blank">源码链接</a>
+                <a href="https://liyuyu123.github.io/pikachu/dist/index.html"
+                target="blank" >项目预览</a
+                >
+              </span>
+            </header>
+            <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+          </li>
+          <li>
+            <header>
+              <h3>自己写的 jQuery 库</h3>
+              <span>
+                <a href="https://github.com/LiYuyu123/jQuery/blob/master/src/jquery.js" target="blank">源码链接</a>
+              </span>
+            </header>
+            <p>
+              实现了 <strong>元素选择、元素创建、事件委托</strong> 、等常见功能
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr>
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2018年</time>~<time>2021年</time> </span>
+          浙江科技学院 专科
+        </p>
+      </section>
+      <hr>
+      <section class="others">
+        <h2>其他链接</h2>
+        <ul>
+          <li><a href="https://www.zhihu.com/people/effort-88-96" target="blank">我的知乎</a></li>
+          <li><a href="https://github.com/LiYuyu123" target="blank">我的GitHub</a></li>
+        </ul>
+      </section>
+    </article>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+  <script type="text/javascript" src="main.0eca2b8e0fc0f8a05868.js"></script></body>
+</html>
